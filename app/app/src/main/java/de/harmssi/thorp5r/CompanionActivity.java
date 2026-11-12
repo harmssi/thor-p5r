@@ -33,6 +33,7 @@ public class CompanionActivity extends Activity implements P5Client.Listener {
         }
         client = new P5Client(HOST, PORT, this);
         DeckAlarm.deckOpen = true;
+        DeckAlarm.arm(this, 0);   // also when the deck was opened without the starter
     }
 
     @Override protected void onStart() {

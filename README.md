@@ -47,8 +47,9 @@ Measured on an AYN Thor (Snapdragon 8 Gen 2, 12 GB) with DroidDeck 0.7.1, game g
 - **Memory is at the limit.** While the game loads, Android may end other apps, including the deck; the deck comes
   back by itself (see Install, step 3). With extra load on the device – installing an app, recording both screens –
   Android ended the **game** several times in my tests, and sometimes once while it was starting (DroidDeck then
-  starts it again). Restarting the device first and running nothing else helps.
-- A long play session was not tested.
+  starts it again). Restarting the device first and running nothing else helps, but not reliably: in my last test
+  Android ended the game three times within a few minutes, twice while a save was loading.
+- I did not get a long play session to run without such an interruption.
 
 If that is not good enough for you, this project cannot fix it: it is a property of the game under DroidDeck on this
 hardware.
