@@ -48,9 +48,9 @@ Measured on an AYN Thor (Snapdragon 8 Gen 2, 12 GB) with DroidDeck 0.7.1:
   again, mostly while a save was loading.
 - Even at 50 % Android may end the game once while it starts (DroidDeck starts it again) and may end the deck while
   the game loads; the deck comes back by itself (see Install, step 3).
-- **Frame generation works:** with your own *Lossless Scaling* installed from Steam in DroidDeck, choose *LSFG 2×*
-  in DroidDeck's in-session menu (display tab → Frame generation). DroidDeck's log showed 48–50 presented frames per
-  second from the game's 24. Measured in the game's load menu for a few minutes; not yet in a loaded save.
+- **Frame generation (LSFG 2× from your own Lossless Scaling, DroidDeck's display tab) is not usable here yet:** it did
+  double the presented frames (48–50 from 24) in the game's load menu, but with it switched on Android ended the
+  game again and again in a 12-minute test and no save could be loaded. Leave it off.
 - The game runs as an x86 program under emulation; the deck itself costs 1–2 fps. Sessions longer than 10 minutes,
   palaces and Mementos were not measured at 50 %.
 
