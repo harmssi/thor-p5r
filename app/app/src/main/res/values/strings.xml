@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Thor P5R</string>
+    <string name="companion_name">P5R Deck</string>
+    <string name="waiting">WAITING FOR THE GAME</string>
+    <string name="starting">GAME IS STARTING</string>
+    <string name="waiting_hint">Start Persona 5 Royal in DroidDeck (with the Thor P5R status mod installed).</string>
+    <string name="no_save">TAKE YOUR TIME</string>
+    <string name="no_save_hint">Load a save to see your day, party and confidants.</string>
+    <string name="droiddeck_missing">DroidDeck is not installed.</string>
+    <string name="tab_today">TODAY</string>
+    <string name="tab_party">PARTY</string>
+    <string name="tab_confidants">CONFIDANTS</string>
+    <string name="tab_shadows">SHADOWS</string>
+    <string name="social">SOCIAL STATS</string>
+    <string name="rank">RANK</string>
+    <string name="points">pts</string>
+    <string name="security">SECURITY</string>
+    <string name="personas">PERSONAS</string>
+    <string name="lv">Lv</string>
+    <string name="rank_up">RANK UP READY</string>
+    <string name="no_confidants">NO CONFIDANTS YET</string>
+    <string name="no_shadows">LIST NOT LOADED</string>
+    <string name="el_phys">Phys</string><string name="el_gun">Gun</string><string name="el_fire">Fire</string><string name="el_ice">Ice</string>
+    <string name="el_elec">Elec</string><string name="el_wind">Wind</string><string name="el_psy">Psy</string><string name="el_nuke">Nuke</string>
+    <string name="el_bless">Bless</string><string name="el_curse">Curse</string>
+    <string name="a_weak">WK</string><string name="a_resist">RS</string><string name="a_null">NU</string><string name="a_repel">RP</string><string name="a_drain">DR</string>
+    <string name="st_knowledge">KNOWLEDGE</string><string name="st_guts">GUTS</string><string name="st_proficiency">PROFICIENCY</string>
+    <string name="st_kindness">KINDNESS</string><string name="st_charm">CHARM</string>
+    <string name="d_sun">SUNDAY</string><string name="d_mon">MONDAY</string><string name="d_tue">TUESDAY</string><string name="d_wed">WEDNESDAY</string>
+    <string name="d_thu">THURSDAY</string><string name="d_fri">FRIDAY</string><string name="d_sat">SATURDAY</string>
+    <string name="t_early">Early morning</string><string name="t_morning">Morning</string><string name="t_daytime">Daytime</string>
+    <string name="t_lunch">Lunchtime</string><string name="t_after">After school</string><string name="t_evening">Evening</string><string name="t_night">Late night</string>
+    <string name="overlay_hint">Allow \"Display over other apps\" for Thor P5R so the deck can come back by itself.</string>
+</resources>

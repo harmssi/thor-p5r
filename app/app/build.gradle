@@ -1,0 +1,20 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'de.harmssi.thorp5r'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'de.harmssi.thorp5r'
+        minSdk 33
+        targetSdk 33
+        versionCode 1
+        versionName '0.1.0'
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_11; targetCompatibility JavaVersion.VERSION_11 }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.debug   // private Sideload-App, Debug-Schlüssel genügt
+        }
+    }
+}

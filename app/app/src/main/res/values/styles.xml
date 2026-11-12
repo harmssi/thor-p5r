@@ -1,0 +1,9 @@
+<resources>
+    <style name="Theme.P5r" parent="@android:style/Theme.Material.NoActionBar.Fullscreen">
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:colorAccent">@color/gold</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+    <color name="bg">#FF0B0B0B</color>
+    <color name="gold">#FFE5191C</color>
+</resources>

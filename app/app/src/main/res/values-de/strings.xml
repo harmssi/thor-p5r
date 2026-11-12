@@ -1,0 +1,29 @@
+<resources>
+    <string name="waiting">WARTE AUF DAS SPIEL</string>
+    <string name="starting">SPIEL STARTET</string>
+    <string name="waiting_hint">Persona 5 Royal in DroidDeck starten (mit installiertem Thor-P5R-Statusmod).</string>
+    <string name="no_save_hint">Lade einen Spielstand, um Tag, Gruppe und Vertraute zu sehen.</string>
+    <string name="droiddeck_missing">DroidDeck ist nicht installiert.</string>
+    <string name="tab_today">HEUTE</string>
+    <string name="tab_party">GRUPPE</string>
+    <string name="tab_confidants">VERTRAUTE</string>
+    <string name="tab_shadows">SCHATTEN</string>
+    <string name="social">SOZIALWERTE</string>
+    <string name="rank">RANG</string>
+    <string name="points">Pkt.</string>
+    <string name="security">SICHERHEIT</string>
+    <string name="rank_up">RANG-AUFSTIEG BEREIT</string>
+    <string name="no_confidants">NOCH KEINE VERTRAUTEN</string>
+    <string name="no_shadows">LISTE NICHT GELADEN</string>
+    <string name="el_phys">Phys</string><string name="el_gun">Schuss</string><string name="el_fire">Feuer</string><string name="el_ice">Eis</string>
+    <string name="el_elec">Elek</string><string name="el_wind">Wind</string><string name="el_psy">Psy</string><string name="el_nuke">Nukl</string>
+    <string name="el_bless">Segen</string><string name="el_curse">Fluch</string>
+    <string name="a_weak">SW</string><string name="a_resist">RS</string><string name="a_null">NU</string><string name="a_repel">RF</string><string name="a_drain">AB</string>
+    <string name="st_knowledge">WISSEN</string><string name="st_guts">MUT</string><string name="st_proficiency">KÖNNEN</string>
+    <string name="st_kindness">GÜTE</string><string name="st_charm">CHARME</string>
+    <string name="d_sun">SONNTAG</string><string name="d_mon">MONTAG</string><string name="d_tue">DIENSTAG</string><string name="d_wed">MITTWOCH</string>
+    <string name="d_thu">DONNERSTAG</string><string name="d_fri">FREITAG</string><string name="d_sat">SAMSTAG</string>
+    <string name="t_early">Früher Morgen</string><string name="t_morning">Morgen</string><string name="t_daytime">Tagsüber</string>
+    <string name="t_lunch">Mittag</string><string name="t_after">Nach der Schule</string><string name="t_evening">Abend</string><string name="t_night">Späte Nacht</string>
+    <string name="overlay_hint">„Über anderen Apps einblenden“ für Thor P5R erlauben, damit das Deck von selbst zurückkommt.</string>
+</resources>
