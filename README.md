@@ -9,7 +9,7 @@ ready to rank up, and a lookup list of every shadow's affinities.
 > contains **no game files and no game artwork**: the look is drawn by the app itself, and every name on the deck
 > (personas, skills, shadows, arcana) is read from *your own* running game, in the game's language.
 
-> **Status: experimental.** The deck works, but the game itself is heavy for the Thor under DroidDeck – read
+> **Status: experimental.** The deck works; the game itself needs the render scale at 50 % on the Thor – read
 > [Performance](#performance-on-the-thor-read-this-first) first.
 
 | Today: social stats and party | Party: personas with weaknesses and skills |
@@ -40,19 +40,16 @@ Languages: English and German labels (follows the device language); all names co
 
 ## Performance on the Thor (read this first)
 
-Measured on an AYN Thor (Snapdragon 8 Gen 2, 12 GB) with DroidDeck 0.7.1, game graphics set to *Low*, 30 fps limit:
+Measured on an AYN Thor (Snapdragon 8 Gen 2, 12 GB) with DroidDeck 0.7.1:
 
-- **About 15–25 fps** in 3D areas (a classroom, a palace safe room), about 40 fps in menus and the intro. The game runs
-  as an x86 program under emulation; the deck itself costs 1–2 fps.
-- **Memory is at the limit.** While the game loads, Android may end other apps, including the deck; the deck comes
-  back by itself (see Install, step 3). With extra load on the device – installing an app, recording both screens –
-  Android ended the **game** several times in my tests, and sometimes once while it was starting (DroidDeck then
-  starts it again). Restarting the device first and running nothing else helps, but not reliably: in my last test
-  Android ended the game three times within a few minutes, twice while a save was loading.
-- I did not get a long play session to run without such an interruption.
-
-If that is not good enough for you, this project cannot fix it: it is a property of the game under DroidDeck on this
-hardware.
+- **Set the render scale to 50 %** (Config → Graphics; quality *Low*, 30 fps limit). With that the game ran a loaded
+  save for 10 minutes at a steady **25 fps** without interruption, and both screens could be recorded at the same time.
+- **At 100 % render scale it is not usable:** 15–25 fps, and Android ended the game for lack of memory again and
+  again, mostly while a save was loading.
+- Even at 50 % Android may end the game once while it starts (DroidDeck starts it again) and may end the deck while
+  the game loads; the deck comes back by itself (see Install, step 3).
+- The game runs as an x86 program under emulation; the deck itself costs 1–2 fps. Sessions longer than 10 minutes,
+  palaces and Mementos were not measured at 50 %.
 
 ## How it works
 
@@ -91,7 +88,7 @@ DroidDeck **on the SD card** (the internal Steam library cannot be reached with 
    Special app access), or `adb shell appops set de.harmssi.thorp5r SYSTEM_ALERT_WINDOW allow`. Android may end the
    deck while the game loads; with this permission it reopens within about half a minute. Nothing is drawn over
    other apps.
-4. In the game, set the graphics to *Low* (Config → Graphics). Then start **Thor P5R**.
+4. In the game, set the graphics to *Low* and the **render scale to 50 %** (Config → Graphics). Then start **Thor P5R**.
 
 ## Build
 
