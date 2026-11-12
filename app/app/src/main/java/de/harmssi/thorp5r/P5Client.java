@@ -31,17 +31,19 @@ final class P5Client {
 
     private void loop() {
         boolean connected = false, haveEnemies = false;
+        int polls = 0;
         while (running) {
             try {
                 P5State s = P5State.parse(get("/state"));
                 if (!connected) { connected = true; ui.post(() -> listener.onConnection(true)); }
                 ui.post(() -> listener.onState(s));
-                if (!haveEnemies && s.ready) {   // the list never changes while the game runs
+                // the list never changes once the game has loaded its tables; until then it is empty, so ask again now and then
+                if (!haveEnemies && s.ready && polls++ % 8 == 0) {
                     JSONArray a = new JSONObject(get("/enemies")).getJSONArray("enemies");
                     List<String[]> list = new ArrayList<>();
                     for (int i = 0; i < a.length(); i++) list.add(new String[] { a.getJSONObject(i).optString("name"), a.getJSONObject(i).optString("aff") });
-                    haveEnemies = true;
-                    ui.post(() -> listener.onEnemies(list));
+                    haveEnemies = !list.isEmpty();
+                    if (haveEnemies) ui.post(() -> listener.onEnemies(list));
                 }
                 Thread.sleep(700);
             } catch (InterruptedException e) {

@@ -20,7 +20,7 @@ ready to rank up, and a lookup list of every shadow's affinities.
 |---|---|
 | ![Bottom screen: confidants by arcana with rank bars; one is highlighted as ready to rank up](docs/screenshots/confidants.jpg) | ![Bottom screen: an alphabetical list of shadows with ten affinity cells each and an A–Z index](docs/screenshots/shadows.jpg) |
 
-<sub>Real screenshots from an AYN Thor (Persona 5 Royal via DroidDeck on top, Thor P5R 0.1.0 below; German game, English deck).</sub>
+<sub>Real screenshots from an AYN Thor (Persona 5 Royal via DroidDeck on top, Thor P5R 0.1.1 below; German game, English deck).</sub>
 
 ## What the deck does
 
@@ -85,7 +85,7 @@ DroidDeck **on the SD card** (the internal Steam library cannot be reached with 
    The game folder is usually
    `/storage/<sd card>/Android/data/com.droiddeck.launcher/files/steam/steamapps/common/P5R`.
    The game's own DLL is kept as `steam_api64_o.dll`; `mod/uninstall_device.sh` puts it back.
-2. **The deck:** `adb install ThorP5R-0.1.0.apk` (from the release).
+2. **The deck:** `adb install ThorP5R-0.1.1.apk` (from the release).
 3. **Let the deck come back by itself:** allow *Display over other apps* for Thor P5R (Android settings → Apps →
    Special app access), or `adb shell appops set de.harmssi.thorp5r SYSTEM_ALERT_WINDOW allow`. Android may end the
    deck while the game loads; with this permission it reopens within about half a minute. Nothing is drawn over
